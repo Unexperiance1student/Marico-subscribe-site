@@ -1,0 +1,274 @@
+@import "norm.scss";
+@import "adapt.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "body.scss";
+@import "about__body.scss";
+@import "blog__body.scss";
+@import "pricing__body.scss";
+@import "login.scss";
+@import "footer.scss";
+
+
+.active {
+    &__body {
+        left: 0;
+    }
+
+    &__lock {
+        overflow: hidden;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #707070;
+    background-color: #000000;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1720px;
+    padding: 0 40px;
+    margin: 8rem auto 0 auto;
+}
+
+.btn {
+    display: flex;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    transition: .2s linear;
+    justify-content: center;
+    align-items: center;
+
+
+    &--blue {
+        background-color: #306EF7;
+
+        &:hover {
+            background-color: darken(#306EF7, 20%);
+        }
+    }
+
+    &--nf {
+        background-color: initial;
+        border: 1px solid #707070;
+        color: #707070;
+
+        &:hover {
+            background-color: lighten(#000000, 20%);
+            color: lighten(#707070, 10%);
+        }
+    }
+}
+
+
+.intro {
+
+    &__img {
+        margin-right: 1.7rem;
+
+        @include breakpoint($tablet-bp) {
+            margin-right: 1rem;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+
+    &__logo {
+        font-weight: 800;
+        font-size: 3.7rem;
+        color: #FFFFFF;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    &__mail {
+        font-weight: 400;
+        font-size: 2.7rem;
+        line-height: 1.48;
+        color: inherit;
+        transition: .2s linear;
+
+        &:hover {
+            color: #306EF7;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.get {
+    margin: 0 auto 15rem auto;
+    width: 100%;
+    max-width: 89rem;
+
+    &__img {
+        margin: 0 auto;
+        width: 16.4rem;
+        height: 15rem;
+
+        @include breakpoint($tablet-bp) {
+            width: 13.4rem;
+            height: 11rem;
+        }
+
+        @include breakpoint($mobile-bp) {
+            width: 11.4rem;
+            height: 9rem;
+        }
+    }
+
+    &__intro {
+        font-weight: 700;
+        font-size: 10rem;
+        line-height: 1.5;
+        color: #FFFFFF;
+        text-align: center;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 7rem;
+        }
+
+        @include breakpoint($pl-bp) {
+            font-size: 5rem;
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 3rem;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 4.3rem;
+        line-height: 1.49;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 1.5rem;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 3rem;
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__btn {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 47.2rem;
+        height: 10.2rem;
+        margin-bottom: 2.7rem;
+
+        @include breakpoint($tablet-bp) {
+            height: 10.2rem;
+        }
+
+        @include breakpoint($pl-bp) {
+            height: 8rem;
+        }
+
+        @include breakpoint($mobile-bp) {
+            height: 7rem;
+        }
+    }
+
+    &__link {
+        text-align: center;
+        font-weight: 600;
+        font-size: 3rem;
+        color: #FFFFFF;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 2.8rem;
+        }
+
+        @include breakpoint($pl-bp) {
+            font-size: 2.5rem;
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 2rem;
+        }
+    }
+}
+
+.copy {
+
+    &__text--white {
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: #FFFFFF;
+        text-align: center;
+
+        @include breakpoint($tablet-bp) {
+            margin-left: 1.2rem;
+        }
+    }
+
+    &__text {
+        font-size: 2.5rem;
+        text-align: center;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 2rem;
+            margin-left: 1.2rem;
+        }
+
+        @include breakpoint($pl-bp) {
+            font-size: 1.8rem;
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+    }
+}
+
+.dot {
+    width: 1.7rem;
+    height: 1.7rem;
+    background: #0FC65C;
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        top: -30%;
+        left: -30%;
+        width: 2.8rem;
+        height: 2.8rem;
+        background-color:
+            #0FC65C;
+        opacity: 0.24;
+    }
+
+}

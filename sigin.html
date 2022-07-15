@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext"
+    href="https://unpkg.com/swiper/css/swiper.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <title>Зарегистрироваться</title>
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="container">
+    <header class="header">
+        <div class="header__container">
+            <ul class="header__intro intro">
+                <li> <img class="intro__img" src="images/logo.svg" alt=""> </li>
+                <li> <a class="intro__logo" href="index.html">Marico</a></li>
+            </ul>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Use Cases</a>
+                        <span class="nav__arrow"></span>
+                        <ul class="nav__sub-list">
+                            <li class="nav__sub-item"><a data-goto=".main__agree" href="#"
+                                    class="nav__sub-link">Swip</a>
+                            </li>
+                            <li class="nav__sub-item"><a data-goto=".main__footer" href="#" class="nav__sub-link">Get
+                                    Started</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"> <a class="nav__link" href="about.html">About</a> </li>
+                    <li class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></li>
+                    <li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header__logs">
+                <ul class="header__items">
+                    <li class="header__item"><a class="header__log" href="login.html">Login</a></li>
+                    <li class="header__item"><a class="header__sign btn btn--blue" href="sigin.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__icon"><span></span></div>
+        </div>
+    </header>
+</div>
+        <div class="container">
+    <div class="log__text-con">
+        <h2 class="log__logo">Sign up</h2>
+        <h3 class="log__intro">Fill all field for create an account.</h3>
+    </div>
+    <div class="log__con">
+        <form action="/" class="form" method="post">
+            <div class="cabinet cabinet--mb">
+                <div class="cabinet__form">
+                    <div class="form__group">
+                        <label for="" class="form__id"><input type="text" class="form__control form__control--user"
+                                placeholder="Username"></label>
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="" class="form__id"> <input type="password"
+                                class="form__control form__control--password" placeholder="Password"></label>
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="" class="form__id"><input type="email" class="form__control form__control--email"
+                                placeholder="Email Address"></label>
+                        <span class="form__line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form__group">
+                <button class="log__btn btn btn--blue" type="submit">Sig In</button>
+            </div>
+        </form>
+    </div>
+    <p class="log__bg">Or</p>
+    <p class="log__text">Log in with...</p>
+    <div class="log__btn-con">
+        <div class="log__item"><a class="btn log__link log__link--apple" href="">Log in with Apple</a></div>
+        <div class="log__item"><a class="btn log__link log__link--fb" href="">Log in with Facebook</a></div>
+        <div class="log__item"><a class="btn log__link log__link--google" href="">Log in with Google</a></div>
+    </div>
+    <a href="login.html" class="log__copy">Already have an account? Please Log in.</a>
+</div>
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

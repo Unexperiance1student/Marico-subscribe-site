@@ -1,0 +1,186 @@
+.about {
+
+    &__mission {
+        width: 100%;
+        max-width: 100rem;
+        margin: 0 auto 18.6rem auto;
+
+    }
+
+    &__intro {
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: #306EF7;
+        margin-bottom: 3.5rem;
+    }
+
+    &__basic {
+        width: 100%;
+        max-width: 120rem;
+        margin: 0 auto 24rem auto;
+
+    }
+
+    &__text {
+        font-size: 2.8rem;
+        line-height: 1.25;
+        color: darken(#FFFFFF, 25%);
+        margin-bottom: 2.5rem;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 2rem;
+        }
+
+    }
+
+    &__intr {
+        margin-top: 9rem;
+        font-weight: 600;
+        font-size: 2.8rem;
+        line-height: 1.1;
+        color: #FFFFFF;
+        padding-bottom: 7.5rem;
+        border-bottom: 1.5px solid rgba(#828282, 0.24);
+
+    }
+
+    &__team {
+        text-align: center;
+        width: 100%;
+        max-width: 105rem;
+        margin: 0 auto 18.8rem auto;
+    }
+}
+
+.mission {
+    text-align: center;
+
+    &__con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4.8rem;
+    }
+
+    &__img {
+        width: 7.6rem;
+        height: 7rem;
+        margin-right: 2.3rem;
+    }
+
+    &__gl {
+        font-weight: 600;
+        font-size: 7.5rem;
+        line-height: 1.2;
+        color: #FFFFFF;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 6rem;
+        }
+
+        @include breakpoint($pl-bp) {
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 3.5rem;
+        }
+    }
+
+    &__dop {
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 1.1;
+        color: darken(#FFFFFF, 25%);
+
+        @include breakpoint($tablet-bp) {
+            font-size: 2.3rem;
+        }
+
+        @include breakpoint($pl-bp) {
+            font-size: 2rem;
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 1.7rem;
+        }
+    }
+
+    &__logo {
+        font-weight: 800;
+        font-size: 6.2rem;
+        color: #FFFFFF;
+    }
+}
+
+.team {
+
+    &__person {
+        &>* {
+            margin-bottom: 1rem;
+        }
+
+        @include breakpoint($pl-bp) {
+            margin-bottom: 2.5rem;
+        }
+
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__img {}
+
+    &__name {
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 1.2;
+        color: #FFFFFF;
+    }
+
+    &__prof {
+        display: block;
+        font-size: 1.9rem;
+        line-height: 1.2;
+        color: #7F7F7F;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.2;
+        color: #FFFFFF;
+        transition: .2s linear;
+        position: relative;
+
+        &:hover {
+            color: #306EF7;
+        }
+
+        &::after {
+            position: absolute;
+            content: url('/images/Arrow.svg');
+            margin-left: 0.5rem;
+            top: 40%;
+            transform: translateY(-30%);
+        }
+
+    }
+
+    &__conteiner {
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint($pl-bp) {
+            flex-direction: column;
+        }
+    }
+
+    &__intro {
+        font-weight: 600;
+        font-size: 7.5rem;
+        color: #FFFFFF;
+        margin-bottom: 5.9rem;
+    }
+}

@@ -1,0 +1,37 @@
+.footer {
+    margin-bottom: 4rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint($pl-bp) {
+            justify-content: center;
+        }
+    }
+
+    &__intro {
+        display: column;
+        align-items: center;
+    }
+
+    &__nav {
+
+        @include breakpoint($pl-bp) {
+            display: none;
+        }
+
+        margin: auto 0;
+
+        .nav {
+            display: flex;
+        }
+    }
+
+}
+
+.intro {
+    &__top {
+        justify-content: center;
+    }
+}
