@@ -1332,7 +1332,7 @@ body.touch .nav__link {
 }
 
 .aud__con-img {
-  background: url(images/Audience.png) center no-repeat;
+  background: url("../images/Audience.png") center no-repeat;
 }
 @media (max-width: 575px) {
   .aud__con-img {
@@ -1515,7 +1515,7 @@ body.touch .nav__link {
 }
 .team__link::after {
   position: absolute;
-  content: url("/images/Arrow.svg");
+  content: url("../images/Arrow.svg");
   margin-left: 0.5rem;
   top: 40%;
   transform: translateY(-30%);
@@ -1921,22 +1921,22 @@ body.touch .nav__link {
   }
 }
 .form__control--user {
-  background: url("/images/User.svg") no-repeat right;
+  background: url("../images/User.svg") no-repeat right;
 }
 .form__control--user:focus::placeholder {
   opacity: 0;
 }
 .form__control--email {
-  background: url("/images/At_sign.svg") no-repeat right;
+  background: url("../images/At_sign.svg") no-repeat right;
 }
 .form__control--email:focus::placeholder {
   opacity: 0;
 }
 .form__control--password {
-  background: url("/images/Eye.svg") no-repeat right;
+  background: url("../images/Eye.svg") no-repeat right;
 }
 .form__control--password:focus {
-  background: url("/images/Eye_close.svg") no-repeat right;
+  background: url("../images/Eye_close.svg") no-repeat right;
   padding-left: 1rem;
 }
 .form__control--password:focus::placeholder {
@@ -2014,7 +2014,7 @@ body.touch .nav__link {
 }
 .log__link--apple::before {
   display: inline-block;
-  content: url("/images/links/Apple.svg");
+  content: url("../images/links/Apple.svg");
   margin-right: 1.8rem;
 }
 @media (max-width: 575px) {
@@ -2024,7 +2024,7 @@ body.touch .nav__link {
 }
 .log__link--fb::before {
   display: inline-block;
-  content: url("/images/links/Facebook.svg");
+  content: url("../images/links/Facebook.svg");
   margin-right: 1.8rem;
 }
 @media (max-width: 575px) {
@@ -2034,7 +2034,7 @@ body.touch .nav__link {
 }
 .log__link--google::before {
   display: inline-block;
-  content: url("/images/links/G_logo.svg");
+  content: url("../images/links/G_logo.svg");
   margin-right: 1.8rem;
 }
 @media (max-width: 575px) {
