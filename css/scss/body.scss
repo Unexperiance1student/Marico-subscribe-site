@@ -617,7 +617,7 @@
 
     &__con-img {
 
-        background: url(images/Audience.png) center no-repeat;
+        background: url("../images/Audience.png") center no-repeat;
 
         @include breakpoint($mobile-bp) {
             background-size: 100rem;
