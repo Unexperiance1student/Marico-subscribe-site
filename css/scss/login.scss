@@ -41,7 +41,7 @@
         }
 
         &--user {
-            background: url('/images/User.svg') no-repeat right;
+            background: url('../images/User.svg') no-repeat right;
 
             &:focus::placeholder {
                 opacity: 0;
@@ -49,7 +49,7 @@
         }
 
         &--email {
-            background: url('/images/At_sign.svg') no-repeat right;
+            background: url('../images/At_sign.svg') no-repeat right;
 
             &:focus::placeholder {
                 opacity: 0;
@@ -57,10 +57,10 @@
         }
 
         &--password {
-            background: url('/images/Eye.svg') no-repeat right;
+            background: url('../images/Eye.svg') no-repeat right;
 
             &:focus {
-                background: url('/images/Eye_close.svg') no-repeat right;
+                background: url('../images/Eye_close.svg') no-repeat right;
                 padding-left: 1rem;
 
                 &::placeholder {
@@ -157,7 +157,7 @@
         &--apple {
             &::before {
                 display: inline-block;
-                content: url('/images/links/Apple.svg');
+                content: url('../images/links/Apple.svg');
                 margin-right: 1.8rem;
 
                 @include breakpoint($mobile-bp) {
@@ -169,7 +169,7 @@
         &--fb {
             &::before {
                 display: inline-block;
-                content: url('/images/links/Facebook.svg');
+                content: url('../images/links/Facebook.svg');
                 margin-right: 1.8rem;
 
                 @include breakpoint($mobile-bp) {
@@ -181,7 +181,7 @@
         &--google {
             &::before {
                 display: inline-block;
-                content: url('/images/links/G_logo.svg');
+                content: url('../images/links/G_logo.svg');
                 margin-right: 1.8rem;
 
                 @include breakpoint($mobile-bp) {
